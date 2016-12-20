@@ -1,6 +1,9 @@
-[![Travis](https://img.shields.io/travis/beevelop/docker-ionic.svg?style=flat-square)](https://travis-ci.org/beevelop/docker-ionic)
-[![Docker Pulls](https://img.shields.io/docker/pulls/beevelop/ionic.svg?style=flat-square)](https://links.beevelop.com/d-ionic)
-[![ImageLayer](https://badge.imagelayers.io/beevelop/ionic:latest.svg)](https://imagelayers.io/?images=beevelop/ionic:latest)
+[![Travis](https://shields.beevelop.com/travis/beevelop/docker-ionic.svg?style=flat-square)](https://travis-ci.org/beevelop/docker-ionic)
+[![Pulls](https://shields.beevelop.com/docker/pulls/beevelop/ionic.svg?style=flat-square)](https://links.beevelop.com/d-ionic)
+[![Layers](https://shields.beevelop.com/docker/image/layers/beevelop/ionic/latest.svg?style=flat-square)](https://links.beevelop.com/d-ionic)
+[![Size](https://shields.beevelop.com/docker/image/size/beevelop/ionic/latest.svg?style=flat-square)](https://links.beevelop.com/d-ionic)
+[![Release](https://shields.beevelop.com/github/release/beevelop/docker-ionic.svg?style=flat-square)](https://github.com/beevelop/docker-ionic/releases)
+![Badges](https://shields.beevelop.com/badge/badges-7-brightgreen.svg?style=flat-square)
 [![Beevelop](https://links.beevelop.com/honey-badge)](https://beevelop.com)
 
 # Latest Ionic
@@ -25,3 +28,8 @@ docker run -it beevelop/ionic bash
 ```Dockerfile
 FROM beevelop/ionic:latest
 ```
+
+
+----
+
+![One does not simply use latest](https://i.imgflip.com/1fgwxr.jpg)
