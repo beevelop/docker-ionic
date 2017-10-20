@@ -2,7 +2,7 @@ FROM beevelop/cordova
 
 MAINTAINER Maik Hummel <m@ikhummel.com>
 
-ENV IONIC_VERSION 3.13.0
+ENV IONIC_VERSION 3.13.2
 
 RUN apt-get update && apt-get install -y git && \
     npm i -g --unsafe-perm ionic@${IONIC_VERSION} && \
