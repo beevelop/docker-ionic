@@ -2,7 +2,7 @@ FROM beevelop/cordova
 
 MAINTAINER Maik Hummel <m@ikhummel.com>
 
-ENV IONIC_VERSION 4.0.1
+ENV IONIC_VERSION 4.0.5
 
 RUN apt-get update && apt-get install -y git bzip2 openssh-client && \
     npm i -g --unsafe-perm ionic@${IONIC_VERSION} && \
