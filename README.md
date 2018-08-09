@@ -32,4 +32,5 @@ FROM beevelop/ionic:latest
 
 ----
 
+### Use tags where possible, because...
 ![One does not simply use latest](https://i.imgflip.com/1fgwxr.jpg)
