@@ -1,6 +1,6 @@
 FROM beevelop/cordova
 
-ENV IONIC_VERSION 4.12.0
+ENV IONIC_VERSION 5.1.0
 
 RUN apt-get update && apt-get install -y git bzip2 openssh-client && \
     npm i -g --unsafe-perm ionic@${IONIC_VERSION} && \
