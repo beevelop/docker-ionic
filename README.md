@@ -1,4 +1,4 @@
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/beevelop/docker-ionic/Docker%20Image?style=for-the-badge)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/beevelop/docker-ionic/docker.yml?style=for-the-badge)
 ![Docker Pulls](https://img.shields.io/docker/pulls/beevelop/ionic.svg?style=for-the-badge)
 ![Docker Stars](https://img.shields.io/docker/stars/beevelop/ionic?style=for-the-badge)
 ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/beevelop/ionic/latest?style=for-the-badge)
@@ -10,7 +10,7 @@
 
 # Latest Ionic
 
-### based on the latest Cordova with Android `11` and Node.js `14`
+### based on the latest Cordova with Android `13` and Node.js `v18`
 
 ---
 
