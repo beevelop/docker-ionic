@@ -13,5 +13,5 @@ RUN apt-get update && apt-get install -y git bzip2 openssh-client && \
     rm -rf /tmp/myNewProject && \
     rm -rf /var/lib/apt/lists/* && apt-get clean && \
     npm cache clean --force && \
-    node -v && npm -v && yarn -v && cordova -v && \
+    node -v && npm -v && yarn -v && \
     mvn -v && gradle -v && java -version && ant -version
