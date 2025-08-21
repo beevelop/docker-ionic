@@ -2,7 +2,7 @@ name: Docker Image
 
 on:
   schedule:
-    - cron: "0 18 * * *" # everyday at 6pm
+    - cron: "0 12 * * *" # everyday at 12pm
   push:
     branches: ["**"]
     tags: ["v*.*.*"]
@@ -12,11 +12,11 @@ env:
 
 jobs:
   main:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v5
       - name: Set imageName based on the repository name
         id: step_one
         run: |
@@ -29,17 +29,17 @@ jobs:
         with:
           images: ${{ env.imageName }}
       - name: Set up QEMU
-        uses: docker/setup-qemu-action@v2
+        uses: docker/setup-qemu-action@v3
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
+        uses: docker/setup-buildx-action@v3
       - name: Login to Docker Hub
-        uses: docker/login-action@v2
+        uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build and push
         id: docker_build
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v6
         with:
           platforms: ${{ env.platforms }}
           push: ${{ github.event_name != 'pull_request' }}
