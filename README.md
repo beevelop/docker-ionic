@@ -22,10 +22,10 @@
 
 ```bash
 # Pull the latest release
-docker pull beevelop/ionic:v2024.08.3
+docker pull beevelop/ionic:v2025.08.1
 
 # Run interactively
-docker run --rm -it beevelop/ionic:v2024.08.3 bash
+docker run --rm -it beevelop/ionic:v2025.08.1 bash
 
 # Build from source
 docker build -t beevelop/ionic github.com/beevelop/docker-ionic
@@ -34,7 +34,7 @@ docker build -t beevelop/ionic github.com/beevelop/docker-ionic
 ### Use as Base Image
 
 ```Dockerfile
-FROM beevelop/ionic:v2024.08.3
+FROM beevelop/ionic:v2025.08.1
 ```
 
 ---
