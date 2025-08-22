@@ -8,26 +8,30 @@
 ![CalVer](https://img.shields.io/badge/CalVer-YYYY.MM.MICRO-22bfda.svg?style=for-the-badge)
 [![Beevelop](https://img.shields.io/badge/-%20Made%20with%20%F0%9F%8D%AF%20by%20%F0%9F%90%9Dvelop-blue.svg?style=for-the-badge)](https://beevelop.com)
 
-# Latest Ionic (`v7.2.1`)
+# Docker Ionic Framework - Modern Mobile App Development
 
-### based on the latest Cordova with Android `15` and Node.js `v22`
+> Complete Ionic v7.2.1 development environment with Cordova, Android SDK 15, and Node.js v22 for building high-performance mobile applications.
 
----
+## What's Included
 
-### Pull, build or run this image
+**Based on the latest Cordova with Android 15 and Node.js v22**
+
+## Usage
+
+### Pull and Run
 
 ```bash
-# pull the most recent tag / release
+# Pull the latest release
 docker pull beevelop/ionic:latest
 
-# or run the image interactively
-docker run --rm --name beevelop-ionic -it beevelop/ionic:latest bash
+# Run interactively
+docker run --rm -it beevelop/ionic:latest bash
 
-# or build the image from GitHub
+# Build from source
 docker build -t beevelop/ionic github.com/beevelop/docker-ionic
 ```
 
-### Or use as base image
+### Use as Base Image
 
 ```Dockerfile
 FROM beevelop/ionic:latest
@@ -48,6 +52,8 @@ FROM beevelop/ionic:latest
 | [![nginx-basic-auth](https://img.shields.io/badge/beevelop%2Fnginx_basic_auth-grey?style=flat-square&logo=github)](https://github.com/beevelop/docker-nginx-basic-auth) | ![Docker Pulls](https://img.shields.io/docker/pulls/beevelop/nginx-basic-auth.svg?style=flat-square) | ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/beevelop/docker-nginx-basic-auth/docker.yml?style=flat-square) | ![GitHub Release Date](https://img.shields.io/github/release-date/beevelop/docker-nginx-basic-auth?style=flat-square) | ![GitHub release](https://img.shields.io/github/release/beevelop/docker-nginx-basic-auth.svg?style=flat-square) |
 
 ---
+
+![Beevelop's Docker Image Hierarchy](https://gist.githubusercontent.com/beevelop/b0cddab7209a683c77560d06ff00bc8e/raw/15429ee1d02e2c4dc019b760ca8c7ceff5911b82/hierarchy.png)
 
 ### Use tags where possible, because
 
