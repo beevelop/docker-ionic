@@ -4,6 +4,10 @@ ENV IONIC_VERSION 7.2.1
 
 RUN apt-get update && apt-get install -y git bzip2 openssh-client && \
     npm install -g --unsafe-perm @ionic/cli@${IONIC_VERSION} && \
+    # Fix graceful-fs compatibility with Node.js 22 after Ionic CLI installation
+    npm install -g graceful-fs@latest && \
+    npm update -g && \
+    npm rebuild && \
     ionic --version && \
     cd /tmp && \
     ionic start myNewProject blank --type=react --capacitor && \
