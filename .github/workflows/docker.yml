@@ -25,7 +25,7 @@ jobs:
             echo "imageName=$imageName" >> $GITHUB_ENV
       - name: Docker meta
         id: docker_meta
-        uses: docker/metadata-action@v5
+        uses: docker/metadata-action@v6
         with:
           images: ${{ env.imageName }}
       - name: Set up QEMU
@@ -39,7 +39,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - name: Build and push
         id: docker_build
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           platforms: ${{ env.platforms }}
           push: ${{ github.event_name != 'pull_request' }}
