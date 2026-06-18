@@ -16,7 +16,7 @@ jobs:
     timeout-minutes: 30
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Set imageName based on the repository name
         id: step_one
         run: |
