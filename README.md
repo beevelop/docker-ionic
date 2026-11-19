@@ -37,6 +37,12 @@ docker build -t beevelop/ionic github.com/beevelop/docker-ionic
 FROM beevelop/ionic:v2025.08.1
 ```
 
+## CI
+
+Pull requests build the Docker image without logging in to Docker Hub or pushing
+images. Pushes to `latest`, version tags matching `v*.*.*`, and scheduled runs log
+in and publish images.
+
 ---
 
 # All Docker images
